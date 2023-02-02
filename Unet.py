@@ -1,9 +1,8 @@
 #----------------------------------------------------------------------
 #                     import Libraries
 #----------------------------------------------------------------------
-# %matplotlib inline
-# import ENet3
-# from ENet3 import ENet
+import unet_archi
+from unet_archi import build_unet
 import cv2
 import time
 import datetime
@@ -13,8 +12,6 @@ os.environ["TF_CPP_MIN_LOG_LEVEL"] = "2" #To eleminate masseges about RAM & GPU
 import numpy as np
 import pandas as pd
 from matplotlib import pyplot as plt
-import os
-# os.environ["CUDA_VISIBLE_DEVICES"]="-1"    
 import tensorflow as tf
 from tensorflow.keras.models import Model
 from tensorflow.keras.optimizers import Adam
